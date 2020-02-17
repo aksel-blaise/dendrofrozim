@@ -1,0 +1,107 @@
+\documentclass[review]{elsarticle}
+
+\usepackage[colorlinks]{hyperref}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{verbatim}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{lineno,hyperref}
+\usepackage{listings}
+\modulolinenumbers[5]
+
+\journal{colleagues for review}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard 
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+%\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+\title{Initial test of an archaeological site potential model for the Sabine National Forest in advance of southern pine beetle (\textit{Dendroctonus Frontalis} Zimmerman) outbreak}
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+%% Group authors per affiliation:
+\author{Robert Z. Selden, Jr.\textsuperscript{a,b,c*}}
+\address[1]{Heritage Research Center, Stephen F. Austin State University, United States}
+\address[2]{Cultural Heritage Department, Jean Monnet University, France}
+\address[3]{ORCID ID \href{http://orcid.org/0000-0002-1789-8449}{0000-0002-1789-8449}}
+\cortext[cor1]{Corresponding author, Robert Z. Selden, Jr. (zselden@sfasu.edu)}
+
+\begin{abstract}
+Developed collaboratively between the Heritage Research Center (HRC) at Stephen F. Austin State University (SFASU) and the National Forests and Grasslands in Texas (NFGT), an archaeological site potential model is being created for the Sabine National Forest (SNF), the easternmost NFGT property in Texas. National Forests in Mississippi were heavily impacted by the Southern Pine Beetle (SPB) (\textit{Dendroctonus Frontalis} Zimmerman), which have recently expanded westward into Louisiana. The geographic range of SPBs is increasing due to climate change, impacting public and private forests across the American Southeast. Occupying the easternmost range of forested property in Texas, it is assumed that the SNF will be the first NFGT property impacted by the current outbreak of SPBs. The model is generated using packages available in R, combined with knowledge gained from the experience of building the currently-deployed models for the Big Thicket National Preserve, and the Davy Crockett National Forest (DCNF). Funding is requested for the development and initial test of the SNF model using a random sample of 30 locations stratified by administrative and compartment boundaries. The second iteration of the model will be generated following the test, then implemented as one component of a rapid-response protocol developed by NFGT in their response to SPB impacts on  the SNF. This protocol will guide the decision-making strategy for mitigation where a cut-and-leave decision would be triggered for trees in low-probability areas, and a cut-and-remove decision would be triggered for high-probability areas.
+\end{abstract}
+
+\begin{keyword}
+archaeology \sep predictive modeling \sep disaster planning and response
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section*{}
+
+
+
+\bibliography{mybibfile}
+
+\end{document}
